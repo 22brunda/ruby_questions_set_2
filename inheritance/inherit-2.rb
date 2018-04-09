@@ -71,6 +71,8 @@ class Number < City
 	end
 end
 
+class User
+
 
 
 # instantiate a object and check for all code and final number

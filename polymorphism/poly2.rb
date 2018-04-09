@@ -20,3 +20,18 @@
   # 4
   # I am car, I have 4
   #  wheels
+class Vehicle
+  def initialize(wheel)
+    @wheel = wheel
+
+  end
+end
+class Car
+  def initialize
+    super
+    puts "Enter number of wheels"
+  end
+  class Bike
+    def initialize
+      super
+    end
