@@ -27,52 +27,56 @@
 
 
 # dialNumber -> 00
-# 							212
-# 							2414211
-
+#                           212
+#                           2414211
 
 class Country
-	def initialize
-		puts "This is the Country code."
-	end
-
-	def countryCode 
-	 # the country code is 00
-	end
-end
-
-class City
-	def initialize
-		puts "This is the City code."
-	end
-
-	# define cityCode  --> city code is 212
-end
-
-
-class Number < Country
-	def initialize
-		puts "This is the landline number."
-	end
-
-	# define phoneNumber --> phone number is 2414211
-
-end
-
-class Number < City
-	def initialize
-		puts "This is the landline number."
-	end
-
-	# define phoneNumber --> phone number is 2414211
-
-	def dialNumber
-		puts countryCode cityCode phoneNumber 
-	end
-end
-
-class User
-
-
+ def initialize 
+  puts "This is the Country code." 
+ end 
+ def country_code(num) 
+ puts @num = num 
+ end 
+ end 
+ class Sub < Country 
+ end 
+ class City 
+ def initialize 
+ puts "This is the City code." 
+ end 
+ def citycode(code) 
+ puts @code = code 
+ end 
+ end 
+ class Next < City 
+ end 
+ class Number < Country 
+ def initialize 
+ puts "This is the landline number."
+  end
+   # define phoneNumber --> phone number is 2414211 
+   def phone_number(number) 
+   puts @number = number 
+   end 
+   end 
+   class Num < City 
+   def initialize 
+   puts "This is the dialNumber number." 
+   end # define phoneNumber --> phone number is 2414211 
+   def phoneNumber(num) 
+    puts @num = num 
+  end 
+  def dial_number 
+    puts countryCode cityCode phoneNumber 
+  end 
+end 
+m = Sub.new 
+m.country_code("00") 
+x = Next.new 
+x.citycode("212") 
+y = Number.new 
+y.phoneNumber("2414211") 
+p = Num.new 
+p.phoneNumber("002122414211")
 
 # instantiate a object and check for all code and final number
