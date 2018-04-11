@@ -22,32 +22,32 @@
   #  wheels
 
 class Vehilce 
-  def initialize 
+  def wheel
+    puts "Enter the number of wheels:"
+    @a = Integer(gets)
   end 
 end 
 class Bike < Vehilce 
-  def bike 
-    p "Enter number of wheels" 
-    a = Integer(gets) 
-    if a == 2 
-      puts "I am bike, I have 2 wheels" 
+  def wheel
+     super
+    if @a == 2
+      puts "I am Bike I have 2 Wheeels"
     else 
-      puts "I am not bike" 
-    end 
-  end 
+      puts "I am not a Bike sorry"
+    end
+  end
 end 
 class Car < Vehilce 
-  def car 
-    p "Enter number of wheels" 
-    b = Integer(gets) 
-    if b == 4 
-      puts "I am car, I have 4 wheels" 
+ def wheel
+    super
+    if @a == 4
+      puts "I am Car I have 4 Wheeels"
     else 
-      puts "I am not a car" 
-    end 
-  end 
+      puts "I am not a Car sorry"
+    end
+  end
 end 
-bike=Bike.new 
-bike.bike 
-car=Car.new 
-car.car
+ b = Bike.new
+ b.wheel
+ c = Car.new
+ c.wheel
